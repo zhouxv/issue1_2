@@ -239,6 +239,15 @@ public class ConvertList {
         return doubleArray;
     }
 
+    public static Integer[] stringToIntArray(String str) {
+        String[] strArray = str.split(",");
+        Integer[] integers = new Integer[strArray.length];
+        for (int i = 0; i < strArray.length; i++) {
+            integers[i] = Integer.parseInt(strArray[i]);
+        }
+        return integers;
+    }
+
     /*
     double 保留两位小数，四舍五入
      */

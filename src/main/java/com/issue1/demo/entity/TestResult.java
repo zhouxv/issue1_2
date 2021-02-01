@@ -17,6 +17,7 @@ import javax.validation.constraints.NotNull;
  */
 @Data
 @TableName("test_result")
+@Valid
 public class TestResult {
 
 
@@ -26,7 +27,6 @@ public class TestResult {
     /**
      * 
      */
-    @Valid
     @TableField("serviceId")
     @NotNull(message = "serviceid不能为空")
     private Integer serviceid;
